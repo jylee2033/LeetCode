@@ -9,10 +9,10 @@ class Solution:
         # solution 2
         hashset = set()
 
-        for i in nums:
-            if i in hashset:
+        for n in nums:
+            if n in hashset:
                 return True
-            hashset.add(i)
+            hashset.add(n)
         return False
 
 
