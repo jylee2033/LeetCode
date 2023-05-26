@@ -1,16 +1,27 @@
-import collections
+from collections import defaultdict
 from typing import List
 
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        ans = collections.defaultdict(list)
+        # solution 1
+        # ans = defaultdict(list)
+
+        # for s in strs:
+        #     count = [0] * 26
+        #     for c in s:
+        #         count[ord(c) - ord("a")] += 1
+        #     ans[tuple(count)].append(s)
+
+        # return ans.values()
+
+        # solution 2
+        ans = defaultdict(list)
 
         for s in strs:
-            count = [0] * 26
-            for c in s:
-                count[ord(c) - ord("a")] += 1
-            ans[tuple(count)].append(s)
+            sorted_s = ''.join(sorted(s))
+            ans[sorted_s].append(s)
+
         return ans.values()
 
 
