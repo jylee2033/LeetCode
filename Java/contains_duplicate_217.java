@@ -1,7 +1,9 @@
+package Java;
+
 import java.util.HashSet;
 import java.util.Set;
 
-class Solution {
+class ContainsDuplicate {
   public boolean containsDuplicate(int[] nums) {
     // solution 1 (time limit exceeded)
     // for (int i = 0; i < nums.length; i++) {
@@ -29,7 +31,7 @@ class Solution {
   public static void main(String[] args) {
     int[] nums = { 1, 2, 3, 1 };
 
-    Solution solution = new Solution();
+    ContainsDuplicate solution = new ContainsDuplicate();
     boolean containsDuplicates = solution.containsDuplicate(nums);
 
     System.out.println(containsDuplicates);
