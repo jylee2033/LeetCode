@@ -2,24 +2,39 @@ package Java;
 
 class BestTimeToBuyAndSellStock {
   public int maxProfit(int[] prices) {
-    int buy = 0;
-    int sell = 0;
-    int profit = 0;
+    // solution 1
+    // int buy = 0;
+    // int sell = 0;
+    // int profit = 0;
+
+    // for (int i = 0; i < prices.length; i++) {
+    // for (int j = i + 1; j < prices.length; j++) {
+    // if (prices[i] < prices[j]) {
+    // if (prices[j] - prices[i] > profit) {
+    // buy = prices[i];
+    // sell = prices[j];
+    // profit = sell - buy;
+    // }
+    // } else {
+    // break;
+    // }
+    // }
+    // }
+    // return profit;
+
+    // solution 2
+    int min = Integer.MAX_VALUE;
+    int max = 0;
 
     for (int i = 0; i < prices.length; i++) {
-      for (int j = i + 1; j < prices.length; j++) {
-        if (prices[i] < prices[j]) {
-          if (prices[j] - prices[i] > profit) {
-            buy = prices[i];
-            sell = prices[j];
-            profit = sell - buy;
-          }
-        } else {
-          break;
-        }
+      if (prices[i] < min) {
+        min = prices[i];
+      } else if (prices[i] - min > max) {
+        max = prices[i] - min;
       }
     }
-    return profit;
+
+    return max;
   }
 
   public static void main(String[] args) {
