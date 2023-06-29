@@ -10,7 +10,7 @@ class LongestSubstringWithoutRepeatingCharacters {
     int startPosition = 0;
 
     for (int i = 0; i < s.length(); i++) {
-      if (uniques.get(s.charAt(i)) != null) { // uniques에 이미 있을 때
+      if (uniques.get(s.charAt(i)) != null) {
         startPosition = uniques.get(s.charAt(i)) + 1;
         i = startPosition;
         uniques.clear();
@@ -24,7 +24,7 @@ class LongestSubstringWithoutRepeatingCharacters {
   }
 
   public static void main(String[] args) {
-    String s = " ";
+    String s = "abcabcbb";
     LongestSubstringWithoutRepeatingCharacters solution = new LongestSubstringWithoutRepeatingCharacters();
     int length = solution.lengthOfLongestSubstring(s);
 
