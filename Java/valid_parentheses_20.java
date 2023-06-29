@@ -18,9 +18,10 @@ class ValidParentheses {
     }
 
     for (int i = 0; i < s.length(); i++) {
-      if (s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[') {
-        stack.push(s.charAt(i));
-      } else if (hashMap.containsKey(s.charAt(i)) && !stack.empty() && stack.peek() == hashMap.get(s.charAt(i))) {
+      char c = s.charAt(i);
+      if (hashMap.containsValue(c)) {
+        stack.push(c);
+      } else if (hashMap.containsKey(c) && !stack.empty() && stack.peek() == hashMap.get(c)) {
         stack.pop();
       } else {
         return false;
