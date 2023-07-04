@@ -3,8 +3,8 @@ package Java;
 import java.util.Stack;
 
 class MinStack {
-  Stack<Integer> stack;
-  Stack<Integer> min;
+  private final Stack<Integer> stack;
+  private final Stack<Integer> min;
 
   public MinStack() {
     stack = new Stack<>();
