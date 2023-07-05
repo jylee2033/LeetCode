@@ -12,15 +12,11 @@ class MinStack {
   }
 
   public void push(int val) {
-    if (stack.empty()) {
-      stack.push(val);
+    stack.push(val);
+    if (min.empty()) {
       min.push(val);
-    } else if (val > min.peek()) {
-      min.push(min.peek());
-      stack.push(val);
     } else {
-      min.push(val);
-      stack.push(val);
+      min.push(Math.min(val, min.get(min.size() - 1)));
     }
   }
 
@@ -30,8 +26,7 @@ class MinStack {
   }
 
   public int top() {
-    int top = stack.peek();
-    return top;
+    return stack.peek();
   }
 
   public int getMin() {
