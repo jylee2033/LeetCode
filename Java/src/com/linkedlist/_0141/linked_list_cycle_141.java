@@ -1,15 +1,6 @@
-package Java.src.com.linkedlist._0141;
+package java.src.com.linkedlist._0141;
 
-// Definition for singly-linked list.
-class ListNode {
-  int val;
-  ListNode next;
-
-  ListNode(int x) {
-    val = x;
-    next = null;
-  }
-}
+import java.src.com.structure.ListNode;
 
 class LinkedListCycle {
   public boolean hasCycle(ListNode head) {

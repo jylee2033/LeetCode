@@ -1,4 +1,4 @@
-package Java.src.com.slidingwindow._0121;
+package java.src.com.slidingwindow._0121;
 
 class BestTimeToBuyAndSellStock {
   public int maxProfit(int[] prices) {

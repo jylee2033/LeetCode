@@ -1,4 +1,4 @@
-package Java.src.com.binarysearch._0074;
+package java.src.com.binarysearch._0074;
 
 class SearchA2DMatrix {
   public boolean searchMatrix(int[][] matrix, int target) {

@@ -1,4 +1,4 @@
-package Java.src.com.stack._0155.src.com.stack.src.com.Stack;
+package java.src.com.stack._0155;
 
 import java.util.Stack;
 

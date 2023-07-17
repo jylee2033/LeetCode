@@ -1,4 +1,4 @@
-package Java.src.com.trees._0226;
+package java.src.com.trees._0226;
 
 //  Definition for a binary tree node.
 class TreeNode {

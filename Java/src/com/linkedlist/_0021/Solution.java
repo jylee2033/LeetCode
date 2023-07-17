@@ -1,8 +1,8 @@
-package Java.src.com.linkedlist._0021;
+package java.src.com.linkedlist._0021;
 
-import Java.src.com.linkedlist._0141.ListNode;
+import java.src.com.structure.ListNode;
 
-class MergeTwoSortedLists {
+public class Solution {
   public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
     final ListNode root = new ListNode();
     ListNode mergedList = root;
@@ -34,7 +34,7 @@ class MergeTwoSortedLists {
     ListNode list2 = new ListNode(4, new ListNode(5));
     list2.next.next = new ListNode(6);
 
-    MergeTwoSortedLists solution = new MergeTwoSortedLists();
+    Solution solution = new Solution();
     ListNode answer = solution.mergeTwoLists(list1, list2);
 
     while (answer != null) {

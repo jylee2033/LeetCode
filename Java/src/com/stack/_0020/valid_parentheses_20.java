@@ -1,4 +1,4 @@
-package Java.src.com.stack._0020.src.com.stack.src.com.Stack;
+package java.src.com.stack._0020;
 
 import java.util.HashMap;
 import java.util.Map;

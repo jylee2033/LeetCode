@@ -1,4 +1,4 @@
-package Java.src.com.binarysearch._0704;
+package java.src.com.binarysearch._0704;
 
 class BinarySearch {
   public int search(int[] nums, int target) {
