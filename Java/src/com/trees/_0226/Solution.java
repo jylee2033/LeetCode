@@ -22,7 +22,7 @@ public class Solution {
     root.right.left = new TreeNode(6);
     root.right.right = new TreeNode(9);
 
-    InvertBinaryTree solution = new InvertBinaryTree();
+    Solution solution = new Solution();
     solution.invertTree(root);
 
     System.out.println(root.val);
