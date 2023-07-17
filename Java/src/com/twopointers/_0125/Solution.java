@@ -1,6 +1,6 @@
 package java.src.com.twopointers._0125;
 
-class ValidPalindrome {
+public class Solution {
   public boolean isPalindrome(String s) {
     int i = 0;
     int j = s.length() - 1;
@@ -32,7 +32,7 @@ class ValidPalindrome {
   public static void main(String[] args) {
     String s = "race a car";
 
-    ValidPalindrome solution = new ValidPalindrome();
+    Solution solution = new Solution();
     boolean isPalindrome = solution.isPalindrome(s);
 
     System.out.println(isPalindrome);
