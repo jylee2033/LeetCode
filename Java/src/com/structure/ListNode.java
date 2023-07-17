@@ -1,7 +1,7 @@
 package java.src.com.structure;
 
+// Definition for singly-linked list.
 public class ListNode {
-  // Definition for singly-linked list.
   public int val;
   public ListNode next;
 

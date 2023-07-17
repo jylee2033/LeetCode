@@ -1,26 +1,8 @@
 package java.src.com.trees._0226;
 
-//  Definition for a binary tree node.
-class TreeNode {
-  int val;
-  TreeNode left;
-  TreeNode right;
+import java.src.com.structure.TreeNode;
 
-  TreeNode() {
-  }
-
-  TreeNode(int val) {
-    this.val = val;
-  }
-
-  TreeNode(int val, TreeNode left, TreeNode right) {
-    this.val = val;
-    this.left = left;
-    this.right = right;
-  }
-}
-
-class InvertBinaryTree {
+public class Solution {
   public TreeNode invertTree(TreeNode root) {
     if (root == null) {
       return null;
