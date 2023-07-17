@@ -1,6 +1,6 @@
-package com.arrays&hasing._0001;
+package java.src.com.arrayshashing._0001;
 
-class TwoSum {
+public class Solution {
   public int[] twoSum(int[] nums, int target) {
     int[] answer = new int[2];
     for (int i = 0; i < nums.length; i++) {
@@ -18,7 +18,7 @@ class TwoSum {
     int[] nums = { 2, 7, 11, 15 };
     int target = 9;
 
-    TwoSum solution = new TwoSum();
+    Solution solution = new Solution();
     int[] answer = solution.twoSum(nums, target);
 
     for (int i = 0; i < answer.length; i++) {
