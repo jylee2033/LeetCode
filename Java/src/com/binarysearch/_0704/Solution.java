@@ -1,6 +1,6 @@
 package java.src.com.binarysearch._0704;
 
-class BinarySearch {
+public class Solution {
   public int search(int[] nums, int target) {
     int l = 0;
     int r = nums.length - 1;
@@ -23,7 +23,7 @@ class BinarySearch {
     int[] nums = { -1, 0, 3, 5, 9, 12 };
     int target = 9;
 
-    BinarySearch solution = new BinarySearch();
+    Solution solution = new Solution();
     int answer = solution.search(nums, target);
     System.out.println(answer);
   }
