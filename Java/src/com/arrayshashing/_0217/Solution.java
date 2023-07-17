@@ -1,9 +1,9 @@
-package Java;
+package java.src.com.arrayshashing._0217;
 
 import java.util.HashSet;
 import java.util.Set;
 
-class ContainsDuplicate {
+public class Solution {
   public boolean containsDuplicate(int[] nums) {
     // solution 1 (time limit exceeded)
     // for (int i = 0; i < nums.length; i++) {
@@ -31,7 +31,7 @@ class ContainsDuplicate {
   public static void main(String[] args) {
     int[] nums = { 1, 2, 3, 1 };
 
-    ContainsDuplicate solution = new ContainsDuplicate();
+    Solution solution = new Solution();
     boolean containsDuplicates = solution.containsDuplicate(nums);
 
     System.out.println(containsDuplicates);
