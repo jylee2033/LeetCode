@@ -1,6 +1,6 @@
 package java.src.com.binarysearch._0074;
 
-class SearchA2DMatrix {
+public class Solution {
   public boolean searchMatrix(int[][] matrix, int target) {
     int row = matrix.length;
     int column = matrix[0].length;
@@ -41,7 +41,7 @@ class SearchA2DMatrix {
         { 19, 21, 22, 22, 22 } };
     int target = -4;
 
-    SearchA2DMatrix solution = new SearchA2DMatrix();
+    Solution solution = new Solution();
     boolean answer = solution.searchMatrix(matrix, target);
     System.out.println(answer);
   }
