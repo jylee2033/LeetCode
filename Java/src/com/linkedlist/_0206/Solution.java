@@ -1,6 +1,8 @@
 package java.src.com.linkedlist._0206;
 
-class ReverseLinkedList {
+import java.src.com.structure.ListNode;
+
+public class Solution {
   public ListNode reverseList(ListNode head) {
     ListNode next = null;
     ListNode previous = null;
@@ -22,7 +24,7 @@ class ReverseLinkedList {
     head.next.next.next = new ListNode(4);
     head.next.next.next.next = new ListNode(5);
 
-    ReverseLinkedList solution = new ReverseLinkedList();
+    Solution solution = new Solution();
     ListNode answer = solution.reverseList(head);
 
     while (answer != null) {
