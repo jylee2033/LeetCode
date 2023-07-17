@@ -2,7 +2,7 @@ package java.src.com.linkedlist._0141;
 
 import java.src.com.structure.ListNode;
 
-class LinkedListCycle {
+public class Solution {
   public boolean hasCycle(ListNode head) {
     ListNode fast = head;
     ListNode slow = head;
@@ -27,7 +27,7 @@ class LinkedListCycle {
     // int pos = 1;
     // head.next.next.next.next = head.next;
 
-    LinkedListCycle solution = new LinkedListCycle();
+    Solution solution = new Solution();
     boolean hasCycle = solution.hasCycle(head);
 
     System.out.println(hasCycle);
