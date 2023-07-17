@@ -1,4 +1,4 @@
-package Java;
+package Java.src.com.linkedlist._0206;
 
 /**
  * Definition for singly-linked list.

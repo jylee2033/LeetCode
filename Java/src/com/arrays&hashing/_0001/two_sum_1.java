@@ -1,4 +1,4 @@
-package Java;
+package Java.src.com.binarysearch._0001;
 
 class TwoSum {
   public int[] twoSum(int[] nums, int target) {

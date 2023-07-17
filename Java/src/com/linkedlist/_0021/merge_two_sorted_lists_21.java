@@ -1,4 +1,6 @@
-package Java;
+package Java.src.com.linkedlist._0021;
+
+import Java.src.com.linkedlist._0141.ListNode;
 
 class MergeTwoSortedLists {
   public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
