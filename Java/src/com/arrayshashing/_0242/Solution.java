@@ -1,6 +1,6 @@
-package Java;
+package java.src.com.arrayshashing._0242;
 
-class ValidAnagram {
+public class Solution {
   public boolean isAnagram(String s, String t) {
     if (s.length() != t.length()) {
       return false;
@@ -25,7 +25,7 @@ class ValidAnagram {
     String s = "anagram";
     String t = "nagaram";
 
-    ValidAnagram solution = new ValidAnagram();
+    Solution solution = new Solution();
     boolean isAnagram = solution.isAnagram(s, t);
 
     System.out.println(isAnagram);
