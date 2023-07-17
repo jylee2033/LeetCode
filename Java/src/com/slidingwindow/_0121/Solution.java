@@ -1,6 +1,6 @@
 package java.src.com.slidingwindow._0121;
 
-class BestTimeToBuyAndSellStock {
+public class Solution {
   public int maxProfit(int[] prices) {
     // solution 1
     // int buy = 0;
@@ -39,7 +39,7 @@ class BestTimeToBuyAndSellStock {
 
   public static void main(String[] args) {
     int[] prices = { 2, 1, 4 };
-    BestTimeToBuyAndSellStock solution = new BestTimeToBuyAndSellStock();
+    Solution solution = new Solution();
     int time = solution.maxProfit(prices);
 
     System.out.println(time);
