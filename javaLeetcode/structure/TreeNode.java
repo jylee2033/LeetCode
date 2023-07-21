@@ -37,5 +37,14 @@ public class TreeNode {
         treeNodes[i] = new TreeNode(Integer.valueOf(split[i]));
       }
     }
+
+    for (int i = 0; i < len; i++) {
+      if (treeNodes[i] != null) {
+        int leftIndex = i * 2 + 1;
+        if (leftIndex < len) {
+          treeNodes[i].left = treeNodes[leftIndex];
+        }
+      }
+    }
   }
 }
